@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ilenia Portfolio</title>
+     <link rel="stylesheet" href="style.css">
+     <script defer src="https://kit.fontawesome.com/bb5124afe3.js" crossorigin="anonymous"></script> <!-- le emoji per i social e contatti -->
+     <style> @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');</style> <!-- il typeface -->
+  </head>
+  <body>
+
+<!-- header -->
+<header>
+    <div id="header">
+  <div class="container">
+    <nav>
+      <img src="img/logo.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a> </li>
+        <li><a href="#about">About</a> </li>
+        <li><a href="#portfolio">Portfolio</a> </li>
+        <li><a href="#contact">Contatti</a> </li>
+        <i class="fa-solid fa-xmark"onclick="closemenu()"></i>
+      </ul>
+       <i class="fa-solid fa-bars" onclick="openmenu()"> </i>
+    </nav>
+    <div class="header-text">
+      <p>E-commerce student</p>
+      <h1>Benvenuti nel <br>mio <span>sito</span>.</h1>  <!-- h1 il mio sito -->
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- about -->
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+       <img src="img/user.png" class="ilenia-about" loading="lazy">
+      </div>
+      <div class="about-col-2">
+        <h2 class="sub-title">About Me</h2>   <!-- h2 sez about me -->
+        <p>
+Ciao, sono Ilenia, una specie di apprendista maga di e-commerce e di graphic design in cerca di nuove avventure! 🚀 La mia passione per questi mondi dinamici è come un razzo che punta sempre più in alto, alimentato dalla voglia di esplorare e crescere senza sosta. Mi butto a capofitto nella creazione di un futuro professionale che sia sia stimolante che di successo. Se hai qualche consiglio o vuoi scambiare qualche idea, sono tutta orecchie (e tastiere)! ✨</p>
+
+       <div class="tab-titles">
+        <h3 class="tab-links active-link" onclick="opentab('skills')">Skills</h3>  <!-- h3 sez skills -->
+        <h3 class="tab-links" onclick="opentab('experience')">Esperienza</h3>  <!-- h3 sez experience -->
+        <h3 class="tab-links" onclick="opentab('education')">Educazione</h3>  <!-- h3 sez educationnn -->
+       </div>
+       <div class="tab-contents active-tab" id="skills">
+         <ul>
+           <li><span>Copywriting</span><br> La magica arte di scrivere testi persuasivi che catturano cuori e menti. </li>
+           <li><span>SEO</span><br> Il mio talento segreto sta nel far sì che i motori di ricerca si innamorino del tuo sito.  </li>
+           <li><span>Social Media</span><br> Dalle stories ai post, faccio sì che il tuo brand spicchi come una stella in un cielo pieno di contenuti. </li>
+           <li><span>Funnel Marketing</span><br>Costruisco percorsi personalizzati per guidare i visitatori da semplici spettatori a clienti affezionati. </li>
+           <li><span>HTML e CSS</span><br>Uso HTML per costruire le solide fondamenta delle pagine web e CSS per aggiungere il tocco di design, creando esperienze online che fanno "wow". </li>
+         </ul>
+        </div>
+       <div class="tab-contents" id="experience">
+         <ul>
+           <li><span>2023</span><br>Organizzazione e archivio documentale privata <br> Amnesty </li>
+           <li><span>2020-2021</span><br> Amazon </li>
+           <li><span>2020-2018</span><br> Esperienza lavorativa </li>
+         </ul>
+       </div>
+       <div class="tab-contents" id="education">
+         <ul>
+           <li><span>E-commerce </span><br> Start-to-impact University </li>
+           <li><span>Graphic Design </span><br> CalArts tramite Coursera</li>
+           <li><span>Diploma superiore</span><br>Scuola superiore</li>
+         </ul>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Portfolio -->
+
+<div id="portfolio">
+  <div class="container">
+    <h2 class="sub-title">I miei progetti</h2>   <!-- h2 sez works -->
+    <div class="work-list">
+      <div class="work">
+        <img src="img/progetto-1.png" loading="lazy">
+        <div class="layer">
+          <h3>Email Marketing</h3>   <!-- h3 sez email marketing -->
+          <p>In questo progetto ho sfornato un esempio di email tanto fantastica quanto la collezione di costumi in questione.</p>
+          <a href="project/email-work.pdf"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="img/progetto-2.png" loading="lazy">
+        <div class="layer">
+        <h3>Facebook Ads</h3>    <!-- h3 sez fb -->
+        <p>In questo progetto, ho fatto scintille con una strategia per le pubblicità su Facebook.</p>
+        <a href="project/fbads-work.pdf"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="img/progetto-3.png" loading="lazy">
+        <div class="layer">
+        <h3>Google Ads</h3>    <!-- h3 sez gads -->
+        <p>Mi sono messa il cappello da creativa e ho tirato fuori 10 post pronti per la passerella di Google.</p>
+        <a href="project/gads-work.pdf"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+ </div>
+    <a href="#" class="btn">Work in progress </a>   <!-- x futuro aggiungere altri layer a cascata o altra pagina con altri lavori (?) -->
+  </div>
+
+</div>
+
+<!-- contact -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+       <h2 class="sub-title">Scrivimi!</h2>   <!-- h2 sez contact -->
+       <p><i class="fa-solid fa-paper-plane"></i>ilenia.ilenia@gmail.com</p>
+       <p><i class="fa-solid fa-phone"></i>035 678326</p>
+       <div class="social-icons">
+        <a href="https://github.com/meronile"> <i class="fa-brands fa-github-alt"></i></a>
+         <a href="https://linkedin.com/in/ileniameroni"><i class="fa-brands fa-linkedin"></i></a>
+       </div>
+       <a href="project/CV-IleniaMeroni.pdf"download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+       <form name="submit-to-google-sheet">    <!-- per farmi arrivare il mess da form su google sheets  -->
+         <input type="text" name="Nome" placeholder="Il tuo nome" required>
+         <input type="email" name="Email" placeholder="La tua email" required>
+         <textarea name="Messaggio" rows="6" placeholder="Il tuo messaggio"></textarea>
+         <button type="submit" class="btn btn2">Invia</button>
+       </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <div class="footer">
+<a class="footer-link"href="#header">Home</a>    <!-- link che rimandano al menu della pag -->
+<a class="footer-link"href="#about">About</a>
+<a class="footer-link"href="#portfolio">Portfolio</a>
+ <br>
+<div class="contact-footer">  <!-- le stesse info di contatto della sez contact -->
+  <p><i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i> ilenia.ilenia@gmail.com </p>
+  <br>
+    <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> 035 678326 </p>
+</div>
+  <div class="social-footer">  <!-- stesse icon social della sex contact -->
+ <a href="https://github.com/meronile"> <i class="fa-brands fa-github-alt" style="color: #ffffff;"></i></a>
+  <a href="https://linkedin.com/in/ileniameroni"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+</div>
+
+    <p class="made-with-love">Made with <i class="fa-solid fa-heart"></i> by Ilenia.</p>
+  </div>
+
+</div>
+
+<!-- JAVA !>
+
+<! tab about -->  <!-- per far scorrere tra le verie sez e nascondere le altre -->
+<script defer>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove ('active-link');
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove ('active-tab');
+  }
+event.currentTarget.classList.add('active-link');
+document.getElementById(tabname).classList.add('active-tab');
+}
+</script>
+
+<!-- mobile menu -->   <!-- per far aprire e chiudere la barra laterare del menu mobile -->
+<script defer>
+
+var sidemenu = document.getElementById('sidemenu');
+ function openmenu(){
+   sidemenu.style.right = "0";
+ }
+ function closemenu(){
+   sidemenu.style.right = "-200px";
+ }
+</script>
+
+
+  </body>
+</html>
