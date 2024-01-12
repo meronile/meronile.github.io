@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+   font-family: sans-serif;
+   box-sizing: border-box;
+   cursor: crosshair;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+
+body {
+  background: white; /* background bianco per matchare l'header*/
+  color: #242423;  /* colore testo grigio scuro */
+  }
+
+  .navbar{
+    background: white;
+    position: sticky;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+   }
+  nav ul li a {
+    color: #242423; 
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #7a08fa;  /*underline text puurrrple*/
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+    width: 100%;
+  }
+  nav .fa-solid {
+    display: none;
+  }
+
+.container {
+  position: relative;
+  display: flex;
+  padding: 10px 10%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* inizio left side ---------------------------------------------------------------------*/
+
+.left-side {
+  flex: 1;
+  background-color: rgba(122, 8, 250, 0.5); /* #7a08fa con 50% di trasparenza */
+  padding: 20px;
+}
+
+.imgbox{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profiletext{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profiletext h1{
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 14px;
+}
+.profiletext h1 span{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.contactinfo{
+  padding-top: 40px;
+}
+.title-contact{
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* sez contatti */
+.contactinfo ul{
+  position: relative;
+}
+.contactinfo ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+}
+.contactinfo ul li .icon{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #7a08fa;
+}
+.contactinfo ul li span{
+  color: white;
+  font-weight: 300;
+}
+
+/* sez education */
+.contactinfo.education li{
+  margin-bottom: 15px;
+}
+.contactinfo.education h4{
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+.contactinfo.education h3 {
+  color: #7a08fa;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* sez lingue */
+.contactinfo.language li{
+  margin-bottom: 20px;
+}
+.contactinfo.language h2{
+  font-weight: 500;
+}
+.contactinfo.language h3 {
+  color: #7a08fa;
+  font-weight: 500;
+  font-size: 20px;
+}
+.contactinfo.language span{
+  color: white;
+}
+
+
+.title {
+  color: white;
+}
+
+
+
+
+
+/* inizio right side--------------------------------------------------------------------- */
+
+
+
+.right-side {
+  background: white;
+  flex: 2;
+  padding: 20px;
+}
+
+.title2 {
+  color: #7a08fa;
+  border-bottom: 2px solid #242423;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #242423;
+}
+
+.about .box{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .year-company{
+  min-width: 150px;
+}
+.about .box .year-company h3{
+  text-transform: uppercase;
+  color: #7a08fa;
+  font-size: 14px;
+  font-weight: 600;
+}
+.about .box .text h4{
+text-transform: uppercase;
+color: #7a08fa;
+font-size: 16px;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h3 {
+  color: #242423;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.interest ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.interest ul li {
+  list-style: none;
+  color: #242423;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.interest ul li .icn {
+  color: #7a08fa;
+  font-size: 18px;
+  width: 20px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #7a08fa;
+  color: white;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  padding: 25px 60px;
+}
+.contact-footer{
+  color: white;
+  padding: 25px 60px;
+}
+.social-footer {
+  font-size: 30px;
+  padding: 10px;
+}
+.footer i{
+  color: #ff004f;
+}
+
+.made-with-love{
+  padding-top: 1
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+
+
+@media (max-width: 1000px) {
+ .container{
+   margin: 10px;
+   grid-template-columns: repeat(1,1fr);
+ }
+ .interest ul {
+   grid-template-columns: repeat(2,1fr);
+ }
+}
+
+@media only screen and (max-width: 600px){
+
+nav .fa-solid {
+  display: block;
+  font-size: 25px;
+}
+nav ul {
+  background-color: #7a08fa;
+  color:white;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width:200px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 0.5s;
+}
+nav ul li {
+  display: block;
+  margin: 25px;
+}
+nav ul li a {
+  color: white;
+}
+
+nav ul li a::after{
+background: white;
+}
+nav ul .fa-solid{
+  position: absolute;
+  top:25px;
+  left:25px;
+  cursor: pointer;
+}
+.about .box .year-company{
+margin-bottom: 5px;
+}
+.interest ul {
+grid-template-columns: repeat(1,1fr);
+}
+.skills .box{
+grid-template-columns: repeat(1,1fr);
+}
+}
