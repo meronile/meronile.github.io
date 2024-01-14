@@ -379,7 +379,7 @@ nav ul li a::after{
   .about-col-1{
     margin-bottom: 30px;
   }
-  .about-col-1 img {
+  img.ilenia-about {
     display:none;
     background-image: url(img/user-mobile-trp.png)
   }
