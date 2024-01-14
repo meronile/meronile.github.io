@@ -380,8 +380,7 @@ nav ul li a::after{
     margin-bottom: 30px;
   }
   img.ilenia-about {
-    display:none;
-    background-image: url(img/user-mobile-trp.png)
+    width:50%
   }
   .about-col-2{
     font-size: 14px;
