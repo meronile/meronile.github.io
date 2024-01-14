@@ -379,7 +379,7 @@ nav ul li a::after{
   .about-col-1{
     margin-bottom: 30px;
   }
-  .ilenia-about{
+  .about-col-1 img {
     object-fit:cover;
   }
   .about-col-2{
