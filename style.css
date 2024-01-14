@@ -379,10 +379,8 @@ nav ul li a::after{
   .about-col-1{
     margin-bottom: 30px;
   }
-
   .ilenia-about{
-    width:200 px;
-    height: 200px;
+    width:50%;
   }
   .about-col-2{
     font-size: 14px;
