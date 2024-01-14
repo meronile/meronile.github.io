@@ -380,6 +380,7 @@ nav ul li a::after{
     margin-bottom: 30px;
   }
   .about-col-1 img {
+    display:none;
     background-image: url(img/user-mobile-trp.png)
   }
   .about-col-2{
