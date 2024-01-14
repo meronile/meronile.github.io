@@ -380,7 +380,7 @@ nav ul li a::after{
     margin-bottom: 30px;
   }
   .about-col-1 img {
-    object-fit: scale-down;;
+    object-fit: scale-down;
   }
   .about-col-2{
     font-size: 14px;
