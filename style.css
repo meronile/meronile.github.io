@@ -169,7 +169,8 @@ flex-basis: 35%;
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0), #a82ffc);
+  background: linear-gradient(to top, #7a08fa, #9862ff, #b799ff, #d9cdff, #ffffff);
+  opacity: 0.9;
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -185,12 +186,12 @@ flex-basis: 35%;
   transition: height 0.5s;
 }
 .layer h3 {
-  color: white;
+  color: #242423;
   font-weight: 800;
   margin-bottom: 20px;
 }
 .layer p {
-  color: white;
+  color: #242423;
   font-weight: 600;
 }
 .layer a {
